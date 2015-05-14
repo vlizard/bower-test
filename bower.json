@@ -6,7 +6,7 @@
     "Valeriy Shkiryak <valeriy.lizard@gmail.com>"
   ],
   "description": "Bower test",
-  "main": "dist/index.js",
+  "main": "index.js",
   "license": "MIT",
   "ignore": [
     "**/.*",
