@@ -1,0 +1,10 @@
+{
+	"framework": "jasmine",
+	"launch_in_dev": ["Chrome"],
+	"src_files": [
+		"bower_components/jquery/dist/jquery.js",
+		"bower_components/sinonjs/sinon.js",
+		"*.js",
+		"tests/*.js"
+	]
+}
