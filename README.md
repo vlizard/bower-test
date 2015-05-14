@@ -1,2 +1,2 @@
-# bower-test
-To play with bower
+# dummy-extend
+Dummy wrapper around jQuery extend

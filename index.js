@@ -1,4 +1,4 @@
-window.bowerTest = function(obj) {
+window.dummyExtend = function(obj) {
 	return $.extend(true, {
 		x: -1,
 		y: -2,

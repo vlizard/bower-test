@@ -1,11 +1,11 @@
 {
-  "name": "vlizard-bower-test",
+  "name": "vlizard-dummy-extend",
   "version": "0.1.0",
-  "homepage": "https://github.com/vlizard/bower-test",
+  "homepage": "https://github.com/vlizard/dummy-extend",
   "authors": [
     "Valeriy Shkiryak <valeriy.lizard@gmail.com>"
   ],
-  "description": "Bower test",
+  "description": "Dummy wrapper around jQuery extend",
   "main": "index.js",
   "license": "MIT",
   "ignore": [
