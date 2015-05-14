@@ -1,5 +1,5 @@
 describe("dummyExtend", function() {
-	it("should add defaults", function() {
+	it("should include defaults", function() {
 		expect(dummyExtend({x: 1})).toEqual(jasmine.objectContaining({
 			y: -2,
 			z: -3
