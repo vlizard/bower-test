@@ -1,7 +1,7 @@
 {
 	"framework": "jasmine",
 	"launch_in_dev": ["Chrome"],
-	"launch_in_ci": ["PhantomJS"],
+	"launch_in_ci": ["PhantomJS", "Firefox"],
 	"src_files": [
 		"bower_components/jquery/dist/jquery.js",
 		"bower_components/sinonjs/sinon.js",
