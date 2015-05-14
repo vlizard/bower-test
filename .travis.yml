@@ -6,3 +6,7 @@ node_js:
 before_install: npm install -g testem bower
 install: bower install
 script: testem ci
+
+cache:
+  directories:
+    - bower_components
