@@ -1,10 +1,11 @@
 {
-	"framework": "jasmine",
+	"framework": "mocha",
 	"launch_in_dev": ["Chrome"],
 	"launch_in_ci": ["PhantomJS", "Firefox"],
 	"src_files": [
 		"bower_components/jquery/dist/jquery.js",
 		"bower_components/sinonjs/sinon.js",
+		"bower_components/chai/chai.js",
 		"*.js",
 		"tests/*.js"
 	]
