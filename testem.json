@@ -3,11 +3,15 @@
 	"launch_in_dev": ["Chrome"],
 	"launch_in_ci": ["PhantomJS", "Firefox"],
 	"src_files": [
+		"src/*.js",
+		"tests/*.js"
+	],
+	"serve_files": [
 		"bower_components/jquery/dist/jquery.js",
 		"bower_components/sinonjs/sinon.js",
 		"bower_components/chai/chai.js",
-		"src/*.js",
-		"tests/*.js"
+		"dist/index.js",
+		"dist/tests.js"
 	],
 	"before_tests": "gulp",
 	"after_tests": "rm dist/tests.js"

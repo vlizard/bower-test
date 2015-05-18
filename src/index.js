@@ -1,6 +1,6 @@
 "use strict";
 
-window.dummyExtend = function(obj) {
+export default function dummyExtend(obj) {
 	return $.extend(true, {
 		x: -1,
 		y: -2,
@@ -9,4 +9,4 @@ window.dummyExtend = function(obj) {
 			desc: "Random point"
 		}
 	}, obj);
-};
+}

@@ -1,21 +1,24 @@
 "use strict";
 
-var expect = chai.expect;
-describe("dummyExtend", function() {
-	it("should include defaults", function() {
+import dummyExtend from "../src/index";
+
+let expect = chai.expect;
+
+describe("dummyExtend", () => {
+	it("should include defaults", () => {
 		expect(dummyExtend({x: 1})).to.have.property("z", -3);
 	});
 
-	it("should redefine values", function() {
+	it("should redefine values", () => {
 		expect(dummyExtend({x: 1})).to.have.property("x", 1);
 	});
 
-	it("should redefine nested values", function() {
+	it("should redefine nested values", () => {
 		expect(dummyExtend({meta: {desc: "New desc"}}))
 			.to.have.deep.property("meta.desc", "New desc");
 	});
 
-	it("should execute $.extend", function() {
+	it("should execute $.extend", () => {
 		var spy = sinon.spy($, "extend");
 		dummyExtend({});
 		expect(spy.called).to.equal(true);
