@@ -2,7 +2,7 @@
   "name": "dummy-extend",
   "version": "0.1.0",
   "description": "Dummy wrapper around jQuery extend",
-  "main": "index.js",
+  "main": "./src/index.js",
   "directories": {
     "test": "tests"
   },
@@ -19,5 +19,15 @@
     "url": "https://github.com/vlizard/dummy-extend/issues"
   },
   "homepage": "https://github.com/vlizard/dummy-extend",
-  "devDependencies": {}
+  "devDependencies": {
+    "babelify": "^6.1.1",
+    "browserify": "^10.2.0",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-jscs": "^1.6.0",
+    "gulp-jshint": "^1.10.0",
+    "jshint-stylish": "^1.0.2",
+    "merge-stream": "^0.1.7",
+    "vinyl-source-stream": "^1.1.0"
+  }
 }

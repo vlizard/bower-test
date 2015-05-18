@@ -6,7 +6,9 @@
 		"bower_components/jquery/dist/jquery.js",
 		"bower_components/sinonjs/sinon.js",
 		"bower_components/chai/chai.js",
-		"*.js",
+		"src/*.js",
 		"tests/*.js"
-	]
+	],
+	"before_tests": "gulp",
+	"after_tests": "rm dist/tests.js"
 }

@@ -1,0 +1,25 @@
+{
+	"esnext": true,
+	"curly": true,
+	"eqeqeq": true,
+	"forin": true,
+	"freeze": true,
+	"latedef": true,
+	"noarg": true,
+	"nonbsp": true,
+	"nonew": true,
+	"singleGroups": true,
+	"strict": true,
+	"undef": true,
+	"unused": true,
+	"browser": true,
+	"node": true,
+	"mocha": true,
+	"jquery": true,
+	"globals": {
+		"chai": false,
+		"mocha": false,
+		"sinon": false,
+		"dummyExtend": false
+	}
+}

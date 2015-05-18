@@ -1,3 +1,5 @@
+"use strict";
+
 window.dummyExtend = function(obj) {
 	return $.extend(true, {
 		x: -1,

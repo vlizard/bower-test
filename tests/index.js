@@ -1,3 +1,5 @@
+"use strict";
+
 var expect = chai.expect;
 describe("dummyExtend", function() {
 	it("should include defaults", function() {
@@ -16,7 +18,7 @@ describe("dummyExtend", function() {
 	it("should execute $.extend", function() {
 		var spy = sinon.spy($, "extend");
 		dummyExtend({});
-		expect(spy.called).to.be.true;
+		expect(spy.called).to.equal(true);
 		spy.restore();
 	});
 });

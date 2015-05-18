@@ -6,7 +6,7 @@
     "Valeriy Shkiryak <valeriy.lizard@gmail.com>"
   ],
   "description": "Dummy wrapper around jQuery extend",
-  "main": "index.js",
+  "main": "./src/index.js",
   "license": "MIT",
   "ignore": [
     "**/.*",
