@@ -8,9 +8,9 @@ before_install:
   - npm install -g testem bower gulp
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
-
-after_install: bower install
+  - bower install
 
 cache:
   directories:
     - bower_components
+    - node_modules
