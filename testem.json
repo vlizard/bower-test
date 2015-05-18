@@ -8,8 +8,6 @@
 	],
 	"serve_files": [
 		"bower_components/jquery/dist/jquery.js",
-		"bower_components/sinonjs/sinon.js",
-		"bower_components/chai/chai.js",
 		"dist/index.js",
 		"dist/tests.js"
 	],

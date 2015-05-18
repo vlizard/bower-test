@@ -18,8 +18,5 @@
   "dependencies": {
     "jquery": "~2.1.4"
   },
-  "devDependencies": {
-    "sinonjs": "~1.14.1",
-    "chai": "~2.3.0"
-  }
+  "devDependencies": {}
 }

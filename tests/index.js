@@ -1,6 +1,8 @@
 "use strict";
 
 import dummyExtend from "../src/index";
+import chai from "chai";
+import sinon from "sinon";
 
 let expect = chai.expect;
 
