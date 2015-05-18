@@ -1,0 +1,23 @@
+{
+  "name": "dummy-extend",
+  "version": "0.1.0",
+  "description": "Dummy wrapper around jQuery extend",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "testem ci"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vlizard/dummy-extend.git"
+  },
+  "author": "Valeriy Shkiryak <valeriy.lizard@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vlizard/dummy-extend/issues"
+  },
+  "homepage": "https://github.com/vlizard/dummy-extend",
+  "devDependencies": {}
+}
