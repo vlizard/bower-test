@@ -1,15 +1,15 @@
 "use strict";
 
-var gulp = require("gulp");
-var babelify = require("babelify");
-var browserify = require("browserify");
-var source = require("vinyl-source-stream");
-var jshint = require("gulp-jshint");
-var jscs = require("gulp-jscs");
-var del = require("del");
-var merge = require("merge-stream");
+let gulp = require("gulp");
+let babelify = require("babelify");
+let browserify = require("browserify");
+let source = require("vinyl-source-stream");
+let jshint = require("gulp-jshint");
+let jscs = require("gulp-jscs");
+let del = require("del");
+let merge = require("merge-stream");
 
-var bundle = function(meta) {
+let bundle = meta => {
 	return browserify({
 		entries: meta.entries,
 		debug: true
@@ -20,13 +20,13 @@ var bundle = function(meta) {
 	.pipe(gulp.dest("./dist"));
 };
 
-gulp.task("build", ["lint", "clean"], function() {
-	var source = bundle({
+gulp.task("build", ["lint", "clean"], () => {
+	let source = bundle({
 		entries: "./src/index.js",
 		dest: "index.js"
 	});
 	// FIXME: test bundle must not include library itself, only test code
-	var tests = bundle({
+	let tests = bundle({
 		entries: [
 			"./tests/index.js"
 		],
@@ -35,16 +35,16 @@ gulp.task("build", ["lint", "clean"], function() {
 	return merge(source, tests);
 });
 
-gulp.task("clean", function(cb) {
+gulp.task("clean", cb => {
 	del("./dist/**/*", cb);
 });
 
-gulp.task("jscs", function() {
+gulp.task("jscs", () => {
 	return gulp.src(["gulpfile.js", "src/**/*.js", "tests/**/*.js"])
 		.pipe(jscs());
 });
 
-gulp.task("jshint", function() {
+gulp.task("jshint", () => {
 	return gulp.src(["gulpfile.js", "src/**/*.js", "tests/**/*.js"])
 		.pipe(jshint())
 		.pipe(jshint.reporter("jshint-stylish"))
